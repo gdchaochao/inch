@@ -10,7 +10,7 @@ cardinalities.
 To install, simply `go get` from the command line:
 
 ```sh
-$ go get github.com/influxdata/inch/cmd/inch
+$ go get github.com/gdchaochao/inch/cmd/inch
 ```
 
 
@@ -85,4 +85,9 @@ key value pairs. For example `-report-tags instance=m4.2xlarge,index=tsi1`.
 When `-report-host` is set to a non-empty value, inch will report throughput, 
 points and values written, as well as write latency statistics.
 
+
+## Example
+```sh
+inch -f 60 -b 10 -p 10 -t 10
+```
 

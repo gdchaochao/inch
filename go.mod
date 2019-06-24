@@ -1,4 +1,4 @@
-module github.com/influxdata/inch
+module github.com/gdchaochao/inch
 
 require github.com/influxdata/influxdb v0.0.0-20190110045147-d73d73c0d4b7
 
