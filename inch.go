@@ -351,7 +351,7 @@ func (s *Simulator) generateBatches() <-chan []byte {
 		var lastMN int
 		lastM := []byte("m0")
 		for i := 0; i < s.PointN(); i++ {
-			fmt.Println(i)
+			//fmt.Println(i)
 			// Generate field string.
 			var fields []byte
 			fields = generatorField(s.FieldsPerPoint, s.FieldPrefix)
@@ -402,7 +402,6 @@ func (s *Simulator) generateBatches() <-chan []byte {
 		// Close channel.
 		close(ch)
 	}()
-
 	return ch
 }
 
@@ -857,7 +856,7 @@ func generatorField(fieldsPerPoint int, fieldPrefix string) []byte {
 		}
 		fields = append(fields, []byte(pair)...)
 	}
-	fmt.Println(fields)
+	//fmt.Println(fields)
 	return fields
 }
 
